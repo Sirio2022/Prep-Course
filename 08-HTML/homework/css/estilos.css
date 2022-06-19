@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(30, 143, 255, 0.404);
+}
+img{
+    width: 400px;
+}
+#foto{
+    margin: auto;
+    max-width: 400px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.texto{
+    margin: auto;
+    max-width: 1200px;
+    text-align: justify;
+    font-size: medium;
+}
+.lista{
+    margin: auto;
+    max-width: 1200px;
+    font-size: larger;
+}
+p{
+    font-size: larger;
+}
+
+   
