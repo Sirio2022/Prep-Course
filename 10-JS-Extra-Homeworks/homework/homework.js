@@ -19,16 +19,17 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  let contador = [];
-  ncad = string.split('');
-  for(let i = 0; i < string.length; i++) {
-    letra = ncad[i].charCodeAt();
-    contador[letra]==undefined ? contador[letra]=1 : contador[letra]++
-  };
-  total={}; 
-  for (var i in contador)
-    total[String.fromCharCode(i)]=contador[i];
-  return total;  
+  
+  let objeto = {};
+
+  for( let i = 0; i < string.length; i++ ){
+    if( objeto.hasOwnProperty(string[i])){
+      objeto[string[i]] = objeto[string[i]] + 1;
+    }else{
+      objeto[string[i]] = 1;
+    }
+  }
+  return objeto;
 }
 
 
